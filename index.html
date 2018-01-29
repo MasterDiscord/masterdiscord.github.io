@@ -95,6 +95,11 @@
                <div class="subtitle">
                <p>Fast no copy globals for Elixir & Erlang. Erlang has an optimization called constant pools for functions that return static data, you can also compile modules at runtime. This method was originally popularized by mochiglobal. This module is an Elixir version with some optimizations such as generating the atom keys and reusing them.</p>
 	     </div>
+		<li>
+	      <a href="https://github.com/4ph3x/manifold">Manifold</a>-- <a href="https://github.com/4ph3x/manifold">Source</a>
+               <div class="subtitle">
+               <p>Fast batch message passing between nodes for Erlang/Elixir. Erlang and Elixir make it very easy to send messages between processes even across the network, but there are a few pitfalls. Inspired by a blog post about boosting performance of message passing between nodes, Manifold was born. Manifold distributes the work of sending messages to the remote nodes of the PIDs, which guarantees that the sending processes at most only calls send/2 equal to the number of involved remote nodes. Manifold does this by first grouping PIDs by their remote node and then sending to Manifold.Partitioner on each of those nodes.</p>
+	     </div>	
 	    </li>
           </ul>
         </section>
