@@ -101,6 +101,12 @@
                <p>Fast batch message passing between nodes for Erlang/Elixir. Erlang and Elixir make it very easy to send messages between processes even across the network, but there are a few pitfalls. Inspired by a blog post about boosting performance of message passing between nodes, Manifold was born. Manifold distributes the work of sending messages to the remote nodes of the PIDs, which guarantees that the sending processes at most only calls send/2 equal to the number of involved remote nodes. Manifold does this by first grouping PIDs by their remote node and then sending to Manifold.Partitioner on each of those nodes.</p>
 	     </div>	
 	    </li>
+		<li>
+	      <a href="https://github.com/4ph3x/instruments">Instruments</a>-- <a href="https://github.com/4ph3x/instruments">Source</a>
+               <div class="subtitle">
+               <p>Simple, powerful and fast metrics for Statsd and DataDog You're blind without metrics. Metrics should also be easy to add to you application and have little performance impact. This module allows you to define metrics with ease and see inside your application.</p>
+	     </div>	
+	    </li>	  
           </ul>
         </section>
       </div>
