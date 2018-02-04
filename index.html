@@ -113,6 +113,12 @@
                <p>Fast semaphore using ETS. Programming in Erlang and Elixir usually allows for no locking since the VM essentially handles it for you when communicating between processes. However, what about the situation when you have thousands of processes attempting to interact with a single resource such as a process? Usually they will overload the process and explode the message queue.</p>
 	     </div>	
 	    </li>
+		<li>
+	      <a href="https://github.com/4ph3x/hash_ring">Hash Ring</a>-- <a href="https://github.com/4ph3x/hash_ring">Source</a>
+               <div class="subtitle">
+               <p>A fast consistent hash ring implementation in Elixir. A pure Elixir consistent hash ring implemention based on the excellent C hash-ring lib by Chris Moos. The hashring provides fast lookup, but ring creation isn't optimized (though it's not slow). It deliberately does not provide encapsulation within a GenServer and leaves that up to the user. At Discord we found using a GenServer for such frequently accessed data proved to be overwhelming so we rewrote the hash ring in pure Elixir and paired it with FastGlobal to allow the calling process to use it's CPU time to interact with the hash ring and therefore avoiding overloading a central GenServer.</p>
+	     </div>	
+	    </li>
           </ul>
         </section>
       </div>
