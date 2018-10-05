@@ -19,6 +19,7 @@ body {
   height: 100%;
   z-index: 9999;
   background: url("../images/loader.gif") 50% 50% no-repeat rgb(0,0,0);
+  transition: all 2s;
   
 /* General & 'Reset' Stuff */
 
